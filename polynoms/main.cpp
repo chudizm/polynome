@@ -10,10 +10,12 @@ void main()
 	cout << "Link A.Value = " << A.getValue() << endl;*/
 	//---------------------PASSED---------------------
 	//--------------------TEST-LIST-------------------
-	/*List A;
+					List A;
 	for (int i = 1; i < 11; i++)
-		A.add(i);
-	cout << A << endl;*/
+		A.put(i);
+	cout << A << endl;
+	A.get();
+	cout << A << A.peek() << A.get() << endl;
 	//---------------------PASSED---------------------
 
 

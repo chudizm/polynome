@@ -3,8 +3,6 @@
 #include "link.h"
 #include <iostream>
 
-class List;																				// - прототип класса
-
 class List																				// - класс "СПИСОК"
 {
 private:
@@ -12,7 +10,10 @@ private:
 public:
 	List();																				// - конструктор инициализации
 	~List();																			// - деструктор
-	void add(const int& val);															// - добавление звена в список
+	bool isEmpty();																		// - проверка на пустоту
+	void put(const int& val);															// - добавление звена в список
+	int get();																			// - удаление звена из списка, возвращает значение удаленного звена
+	int peek();																			// - просмотр текущего звена
 	friend std::ostream& operator<<(std::ostream& os, const List& arg);					// - вывод списка
 };
 
